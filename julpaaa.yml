@@ -1,0 +1,323 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\user
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 30
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 504
+    content: "\e[?9001h\e[?1004h"
+  - delay: 79
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e]0;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 22
+    content: "\e[?25l\e[6;1H\e[?25h"
+  - delay: 157
+    content: 'PS C:\Users\user> '
+  - delay: 4829
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[93mm\e[?25h"
+  - delay: 342
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\bmy\e[?25h"
+  - delay: 135
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[6;19Hmys\e[?25h"
+  - delay: 331
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;19Hmysq\e[?25h"
+  - delay: 281
+    content: "\e[m\e[?25l"
+  - delay: 25
+    content: "\e[93m\e[6;19Hmysql\e[?25h"
+  - delay: 5662
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[6;19Hmysql \e[?25h"
+  - delay: 272
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;19Hmysql \e[37m-\e[?25h"
+  - delay: 392
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[6;19Hmysql \e[90m-u\e[?25h"
+  - delay: 182
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;19Hmysql \e[90m-u \e[?25h"
+  - delay: 101
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;19Hmysql \e[90m-u \e[37mr\e[?25h"
+  - delay: 519
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[6;19Hmysql \e[90m-u \e[37mro\e[?25h"
+  - delay: 147
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[6;19Hmysql \e[90m-u \e[37mroo\e[?25h"
+  - delay: 848
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[6;19Hmysql \e[90m-u \e[37mroot\e[?25h"
+  - delay: 229
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[6;19Hmysql \e[90m-u \e[37mroot \e[?25h"
+  - delay: 494
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;19Hmysql \e[90m-u \e[37mroot -\e[?25h"
+  - delay: 642
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[6;19Hmysql \e[90m-u \e[37mroot \e[90m-o\e[?25h"
+  - delay: 508
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[6;19Hmysql \e[90m-u \e[37mroot - \b\e[?25h"
+  - delay: 356
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;19Hmysql \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 1324
+    content: "\e[m"
+  - delay: 25
+    content: "\r\n"
+  - delay: 21
+    content: E
+  - delay: 10
+    content: 'nter password: '
+  - delay: 1386
+    content: '*'
+  - delay: 198
+    content: '*'
+  - delay: 402
+    content: '*'
+  - delay: 241
+    content: '*'
+  - delay: 1079
+    content: '*'
+  - delay: 509
+    content: '*'
+  - delay: 290
+    content: '*'
+  - delay: 318
+    content: '*'
+  - delay: 495
+    content: "\r\n"
+  - delay: 57
+    content: Welcome to the MariaDB monitor.  Commands end with ; or \g.
+  - delay: 23
+    content: "\e[?25l\r\nYour MariaDB connection id is 7\r\nServer version: 12.1.2-MariaDB MariaDB Server\e[12;1HCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[14;1HType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\e[16;1HMariaDB [(none)]> \e[?25h"
+  - delay: 1856
+    content: u
+  - delay: 188
+    content: s
+  - delay: 232
+    content: e
+  - delay: 230
+    content: ' '
+  - delay: 227
+    content: p
+  - delay: 154
+    content: e
+  - delay: 255
+    content: r
+  - delay: 65
+    content: p
+  - delay: 281
+    content: u
+  - delay: 168
+    content: s
+  - delay: 183
+    content: t
+  - delay: 342
+    content: a
+  - delay: 200
+    content: k
+  - delay: 119
+    content: a
+  - delay: 174
+    content: a
+  - delay: 187
+    content: 'n'
+  - delay: 2809
+    content: ;
+  - delay: 747
+    content: "\r\n"
+  - delay: 13
+    content: "Database changed\r\nMariaDB [perpustakaan]> "
+  - delay: 2296
+    content: s
+  - delay: 318
+    content: h
+  - delay: 286
+    content: o
+  - delay: 186
+    content: w
+  - delay: 184
+    content: ' '
+  - delay: 334
+    content: t
+  - delay: 113
+    content: a
+  - delay: 201
+    content: b
+  - delay: 473
+    content: l
+  - delay: 130
+    content: e
+  - delay: 298
+    content: s
+  - delay: 1038
+    content: ;
+  - delay: 317
+    content: "\r\n"
+  - delay: 18
+    content: "\e[?25lEmpty set (0.001 sec)\e[21;1HMariaDB [perpustakaan]> \e[?25h"
+  - delay: 1399
+    content: e
+  - delay: 580
+    content: x
+  - delay: 245
+    content: i
+  - delay: 289
+    content: t
+  - delay: 731
+    content: "\r\n"
+  - delay: 23
+    content: "Bye\r\n"
+  - delay: 16
+    content: 'PS C:\Users\user> '
+  - delay: 762
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[93me\e[?25h"
+  - delay: 341
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\bex\e[?25h"
+  - delay: 257
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[23;19Hexi\e[?25h"
+  - delay: 306
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[92m\e[23;19Hexit\e[?25h"
+  - delay: 980
+    content: "\e[m"
+  - delay: 22
+    content: "\r\n"
