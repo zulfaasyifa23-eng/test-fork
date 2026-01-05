@@ -1,0 +1,591 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\kandar
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 30
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 3383
+    content: "\e[?9001h\e[?1004h"
+  - delay: 149
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e]0;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 11
+    content: "\e[?25l\e[6;1H\e[?25h"
+  - delay: 291
+    content: 'PS C:\Users\kandar> '
+  - delay: 8723
+    content: "\e[?25l"
+  - delay: 9
+    content: "\e[93mc\e[?25h"
+  - delay: 178
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\bcd\e[?25h"
+  - delay: 3593
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;21Hcd \e[?25h"
+  - delay: 1261
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[91m\e[6;19H> \e[93mcd \e[36m\"\e[?25h"
+  - delay: 6554
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\\e[?25h"
+  - delay: 3311
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\m\e[?25h"
+  - delay: 821
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\my\e[?25h"
+  - delay: 1215
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\m \b\e[?25h"
+  - delay: 424
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\ \b\e[?25h"
+  - delay: 3802
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\p\e[?25h"
+  - delay: 150
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\pr\e[?25h"
+  - delay: 343
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\pro\e[?25h"
+  - delay: 646
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\prog\e[?25h"
+  - delay: 279
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\progr\e[?25h"
+  - delay: 176
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\progra\e[?25h"
+  - delay: 384
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program\e[?25h"
+  - delay: 196
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program \e[?25h"
+  - delay: 174
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program f\e[?25h"
+  - delay: 145
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program fi\e[?25h"
+  - delay: 234
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program fil\e[?25h"
+  - delay: 155
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program file\e[?25h"
+  - delay: 317
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\e[?25h"
+  - delay: 2342
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\\\e[?25h"
+  - delay: 3517
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\\M\e[?25h"
+  - delay: 513
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\\Ma\e[?25h"
+  - delay: 512
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\\Mar\e[?25h"
+  - delay: 165
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\\Mari\e[?25h"
+  - delay: 156
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\\Maria\e[?25h"
+  - delay: 1190
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\\Maria \e[?25h"
+  - delay: 1003
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\\Maria D\e[?25h"
+  - delay: 363
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\\Maria Db\e[?25h"
+  - delay: 595
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\\Maria D \b\e[?25h"
+  - delay: 160
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\\Maria  \b\e[?25h"
+  - delay: 130
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\\Maria \b\e[?25h"
+  - delay: 335
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\\Mariaa\e[?25h"
+  - delay: 999
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\\Maria \b\e[?25h"
+  - delay: 812
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\\MariaD\e[?25h"
+  - delay: 302
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\\MariaDB\e[?25h"
+  - delay: 1270
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\\MariaDB \e[?25h"
+  - delay: 562
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\\MariaDB 1\e[?25h"
+  - delay: 136
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\\MariaDB 11\e[?25h"
+  - delay: 418
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\\MariaDB 11.\e[?25h"
+  - delay: 712
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\\MariaDB 11.8\e[?25h"
+  - delay: 4424
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[37m\r\n>> \e[?25h"
+  - delay: 2136
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[37m\r\n>> \e[?25h"
+  - delay: 1027
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\r   \e[7;4H\e[?25h"
+  - delay: 386
+    content: "\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\\MariaDB 11.8\e[m\r\n   \e[6;52H\e[?25h"
+  - delay: 2780
+    content: "\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\\MariaDB 11.8'\e[?25h"
+  - delay: 581
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;21Hcd \e[36m\"\\program files\\MariaDB 11.8 \b\e[?25h"
+  - delay: 682
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[6;19H> \e[93mcd \e[36m\"\\program files\\MariaDB 11.8\"\e[?25h"
+  - delay: 62410
+    content: "\e[m"
+  - delay: 10
+    content: "\r\n"
+  - delay: 312
+    content: 'PS C:\program files\MariaDB 11.8> '
+  - delay: 2693
+    content: "\e[?25l"
+  - delay: 9
+    content: "\e[93md\e[?25h"
+  - delay: 215
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\bdc\e[?25h"
+  - delay: 1091
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[7;35Hd \b\e[?25h"
+  - delay: 151
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\b \b\e[?25h"
+  - delay: 1664
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[93mc\e[?25h"
+  - delay: 165
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\bcd\e[?25h"
+  - delay: 438
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[7;35Hcd \e[?25h"
+  - delay: 227
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[7;35Hcd \e[37mb\e[?25h"
+  - delay: 599
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[7;35Hcd \e[37mbi\e[?25h"
+  - delay: 163
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[7;35Hcd \e[37mbin\e[?25h"
+  - delay: 3418
+    content: "\e[m"
+  - delay: 17
+    content: "\r\n"
+  - delay: 19
+    content: 'PS C:\program files\MariaDB 11.8\bin> '
+  - delay: 4124
+    content: "\e[?25l"
+  - delay: 9
+    content: "\e[91m\e[8;37H> \e[37m.\e[?25h"
+  - delay: 567
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[8;37H> \e[93m.\\\e[?25h"
+  - delay: 980
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[8;39H.\\m\e[?25h"
+  - delay: 586
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[8;39H.\\my\e[?25h"
+  - delay: 1318
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[8;39H.\\m \b\e[?25h"
+  - delay: 180
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[8;39H.\\ \b\e[?25h"
+  - delay: 286
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[91m\e[8;37H> \e[37m. \b\e[?25h"
+  - delay: 1116
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[8;37H> \e[93m./\e[?25h"
+  - delay: 1853
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[8;39H./m\e[?25h"
+  - delay: 1344
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[8;39H./ \b\e[?25h"
+  - delay: 132
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[91m\e[8;37H> \e[37m. \b\e[?25h"
+  - delay: 3534
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[8;37H> \e[93m.\\\e[?25h"
+  - delay: 546
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[8;39H.\\m\e[?25h"
+  - delay: 303
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[8;39H.\\my\e[?25h"
+  - delay: 256
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[8;39H.\\mys\e[?25h"
+  - delay: 373
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[8;39H.\\mysq\e[?25h"
+  - delay: 1959
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[8;39H.\\mysql\e[?25h"
+  - delay: 2613
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[8;39H.\\mysql \e[?25h"
+  - delay: 3336
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[8;39H.\\mysql \e[37m-\e[?25h"
+  - delay: 411
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[8;39H.\\mysql \e[90m-u\e[?25h"
+  - delay: 967
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[8;39H.\\mysql \e[90m-u \e[?25h"
+  - delay: 486
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[8;39H.\\mysql \e[90m-u \e[37mr\e[?25h"
+  - delay: 297
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[8;39H.\\mysql \e[90m-u \e[37mro\e[?25h"
+  - delay: 118
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[8;39H.\\mysql \e[90m-u \e[37mroo\e[?25h"
+  - delay: 592
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[8;39H.\\mysql \e[90m-u \e[37mroot\e[?25h"
+  - delay: 580
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[8;39H.\\mysql \e[90m-u \e[37mroot \e[?25h"
+  - delay: 606
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[8;39H.\\mysql \e[90m-u \e[37mroot -\e[?25h"
+  - delay: 336
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[8;39H.\\mysql \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 990
+    content: "\e[m"
+  - delay: 9
+    content: "\r\n"
+  - delay: 117
+    content: E
+  - delay: 9
+    content: 'nter password: '
+  - delay: 1720
+    content: '*'
+  - delay: 215
+    content: '*'
+  - delay: 205
+    content: '*'
+  - delay: 180
+    content: '*'
+  - delay: 151
+    content: '*'
+  - delay: 222
+    content: '*'
+  - delay: 400
+    content: '*'
+  - delay: 233
+    content: '*'
+  - delay: 630
+    content: "\r\n"
+  - delay: 112
+    content: Welcome to the MariaDB monitor.  Commands end with ; or \g.
+  - delay: 23
+    content: "\e[?25l\r\nYour MariaDB connection id is 49\r\nServer version: 11.8.3-MariaDB mariadb.org binary distribution\e[14;1HCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[16;1HType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\e[18;1HMariaDB [(none)]> \e[?25h"
+  - delay: 2406
+    content: u
+  - delay: 139
+    content: s
+  - delay: 236
+    content: e
+  - delay: 238
+    content: ' '
+  - delay: 355
+    content: p
+  - delay: 116
+    content: e
+  - delay: 225
+    content: r
+  - delay: 139
+    content: p
+  - delay: 451
+    content: u
+  - delay: 144
+    content: s
+  - delay: 247
+    content: t
+  - delay: 195
+    content: a
+  - delay: 221
+    content: k
+  - delay: 165
+    content: a
+  - delay: 140
+    content: a
+  - delay: 219
+    content: 'n'
+  - delay: 560
+    content: ;
+  - delay: 628
+    content: "\r\n"
+  - delay: 21
+    content: "Database changed\r\nMariaDB [perpustakaan]> "
+  - delay: 9546
+    content: ^D
+  - delay: 1505
+    content: "\r\n"
+  - delay: 14
+    content: '    -> '
+  - delay: 1882
+    content: "ByeCtrl-C -- exit!\r\n"
+  - delay: 12
+    content: "\r\n"
+  - delay: 16
+    content: 'PS C:\program files\MariaDB 11.8\bin> '
+  - delay: 1899
+    content: "\e[?25l"
+  - delay: 12
+    content: "\e[91m^C\e[m\r\nPS C:\\program files\\MariaDB 11.8\\bin> \e[?25h"
+  - delay: 2131
+    content: "\r\nPS C:\\program files\\MariaDB 11.8\\bin> "
+  - delay: 4023
+    content: "\e[?25l"
+  - delay: 22
+    content: "\e[93me\e[?25h"
+  - delay: 407
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\bex\e[?25h"
+  - delay: 353
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[25;39Hexi\e[?25h"
+  - delay: 251
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[92m\e[25;39Hexit\e[?25h"
+  - delay: 722
+    content: "\e[m"
+  - delay: 10
+    content: "\r\n"
